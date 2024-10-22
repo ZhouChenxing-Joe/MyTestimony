@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTestimony</title>
+    <link rel="icon" sizes="192x192" href="./img/sdalogo-removebg-preview.png" type="image/png">
+    <img src="./img/sdalogo-removebg-preview.png" class="icon" alt="Logo">
+    <style>
+        .jesus{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+        }
+        .icon{
+           width: 100px;
+           height: auto; 
+        }
+
+        @media (max-width: 600px) {
+    body {
+        background-size: contain; /* 在较小屏幕上完整显示图像 */
+    }
+}
+        body{
+            background-image: url(./img/mainpage.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 1000px;
+            opacity: 0.9;
+
+        }
+        .all{
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.753);
+            width: 60%;
+            height: 100%;
+            margin: auto;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .verse{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+            font-style: italic;
+            padding: 5%;
+            margin: auto;
+        }
+        p{
+            margin: 2%;
+            padding: 2%;
+            text-align: justify;
+        }
+        h3, p{
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        .arrow{
+            cursor: pointer; /* 鼠标悬停时显示指针 */
+            font-size: 24px;
+            user-select: none; /* 防止选择文字 */
+            transition: transform 0.3s ease; /* 添加箭头旋转的过渡效果 */
+        }
+        .arrow.rotated{
+            transform: rotate(90deg); /* 旋转箭头 */
+        }
+        .content{
+            display: none; /* 初始状态下隐藏文本 */
+            margin-top: 10px;
+        }
+        .section{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/jesus.png" alt="jesus hug you" class="jesus">
+    <div class="all">
+    <h2 class="verse">“Behold, I have refined you, but not as silver; I have tested you in the furnace of affliction.--Isaiah 48:10 NKJV”</h2>
+    
+    <div class="section">
+    <span class="arrow1">&#9654;</span>
+    <span>Journey to Christ</span>
+    <div class="content content1">
+    <p>"I want to start by sharing how I came to know Christ. It all began with a conversation one night with my brother, Henry. We were talking about how everything was created, and at the time, I believed in the idea of a big explosion that led to the creation of the Earth. But Henry told me something that changed my perspective. He told me about the Lord who is beyond us, who by His grace created this universe. Since then, Henry has introduced me to Christ, and my life has never been the same."</p>
+    </div>
+    </div>
+
+    <div class="section">
+        <span class="arrow2">&#9654;</span>
+        <span>Testimony</span>
+    <div class="content content2">
+    <p>"I want to share a personal testimony about how Christ has transformed my life. I told my brother Henry that I would follow Christ, but I was adamant that I wouldn’t quit smoking. I had been smoking since I was 16, and it was a habit I didn’t think I could break. But then, one day, I came across a Bible verse—2 Corinthians 5:17: 'Therefore, if anyone is in Christ, he is a new creation; old things have passed away; behold, all things have become new.'</p>
+    <p>"On that Sabbath day, May 18th, after church, I had a strong urge to smoke. Henry and I were waiting at the bus station, and I lit a cigarette. I was enjoying it, but then, out of nowhere, I started coughing badly, and saliva came out of my mouth. Henry thought I was being dramatic, but something changed in me. I suddenly felt like I didn’t need to smoke anymore. I threw the pack of cigarettes away, and the next day, I didn’t feel the urge to smoke at all. Praise the Lord, after 9 years of smoking, God helped me quit in one night. It has been 110 days since I quit smoking. And just a few weeks after that, I also quit eating pork."</p>
+    <p>"As I understand today, I can truly say that Christ has made me a new creation. The old has passed away, and all things have become new. Thank you all for being here to witness this moment, and thank you to God for His endless grace and mercy."</p> 
+    </div>
+</div>
+
+<script>
+    // 控制第一个部分
+    const arrow1 = document.querySelector('.arrow1');
+    const content1 = document.querySelector('.content1');
+    
+    arrow1.addEventListener('click', function() {
+        content1.style.display = content1.style.display === 'none' || content1.style.display === '' ? 'block' : 'none';
+        arrow1.classList.toggle('rotated');
+    });
+
+    // 控制第二个部分
+    const arrow2 = document.querySelector('.arrow2');
+    const content2 = document.querySelector('.content2');
+    
+    arrow2.addEventListener('click', function() {
+        content2.style.display = content2.style.display === 'none' || content2.style.display === '' ? 'block' : 'none';
+        arrow2.classList.toggle('rotated');
+    });
+</script>
+    
+</body>
+</html>
