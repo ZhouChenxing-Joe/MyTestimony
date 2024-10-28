@@ -82,8 +82,28 @@
     <img src="./img/jesus.png" alt="jesus hug you" class="jesus">
     <div class="all">
     <h2 class="verse">“Behold, I have refined you, but not as silver; I have tested you in the furnace of affliction.--Isaiah 48:10 NKJV”</h2>
-    
-    <div class="section">
+    <button onclick="toggleText('journey')">Journey to Christ</button>
+<p id="journey" style="display:none;">I want to start by sharing how I came to know Christ. It all began with a conversation one night with my brother, Henry. We were talking about how everything was created, and at the time, I believed in the idea of a big explosion that led to the creation of the Earth. But Henry told me something that changed my perspective. He told me about the Lord who is beyond us, who by His grace created this universe. Since then, Henry has introduced me to Christ, and my life has never been the same.</p>
+
+<button onclick="toggleText('testimony')">Testimony</button>
+<p id="testimony" style="display:none;">I want to share a personal testimony about how Christ has transformed my life. I told my brother Henry that I would follow Christ, but I was adamant that I wouldn’t quit smoking. I had been smoking since I was 16, and it was a habit I didn’t think I could break. But then, one day, I came across a Bible verse—2 Corinthians 5:17: 'Therefore, if anyone is in Christ, he is a new creation; old things have passed away; behold, all things have become new.'
+On that Sabbath day, May 18th, after church, I had a strong urge to smoke. Henry and I were waiting at the bus station, and I lit a cigarette. I was enjoying it, but then, out of nowhere, I started coughing badly, and saliva came out of my mouth. Henry thought I was being dramatic, but something changed in me. I suddenly felt like I didn’t need to smoke anymore. I threw the pack of cigarettes away, and the next day, I didn’t feel the urge to smoke at all. Praise the Lord, after 9 years of smoking, God helped me quit in one night. It has been 110 days since I quit smoking. And just a few weeks after that, I also quit eating pork."
+As I understand today, I can truly say that Christ has made me a new creation. The old has passed away, and all things have become new. Thank you all for being here to witness this moment, and thank you to God for His endless grace and mercy.</p>
+
+<script>
+    function toggleText(id) {
+        var text = document.getElementById(id);
+        if (text.style.display === "none") {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+
+
+
+<!--    <div class="section">
     <span class="arrow1">&#9654;</span>
     <span>Journey to Christ</span>
     <div class="content content1">
@@ -119,7 +139,7 @@
         content2.style.display = content2.style.display === 'none' || content2.style.display === '' ? 'block' : 'none';
         arrow2.classList.toggle('rotated');
     });
-</script>
+</script> -->
     
 </body>
 </html>
